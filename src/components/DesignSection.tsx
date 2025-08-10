@@ -51,7 +51,7 @@ const designFeatures: DesignFeature[] = [
 
 export const DesignSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-secondary/20 to-background">
+    <section className="py-16 md:py-20 bg-gradient-to-b from-secondary/20 to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -71,7 +71,7 @@ export const DesignSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center mb-12 md:mb-16">
           {/* Design Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -146,7 +146,7 @@ export const DesignSection = () => {
         </div>
 
         {/* Feature Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {designFeatures.map((feature, index) => (
             <motion.div
               key={feature.title}

@@ -5,7 +5,7 @@ import heroImage from "@/assets/greenbot-hero.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -15,7 +15,7 @@ export const HeroSection = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -68,7 +68,7 @@ export const HeroSection = () => {
           </motion.div>
           
           <motion.div 
-            className="flex items-center gap-6 text-sm text-muted-foreground"
+            className="flex flex-wrap items-center gap-4 md:gap-6 text-sm text-muted-foreground"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
@@ -95,7 +95,7 @@ export const HeroSection = () => {
           transition={{ duration: 1, delay: 0.4 }}
           className="relative"
         >
-          <Greenbot3D className="h-[500px] lg:h-[600px] rounded-2xl bg-gradient-to-br from-background/20 to-background/5 backdrop-blur-sm border border-border/20" />
+          <Greenbot3D className="h-[280px] sm:h-[360px] md:h-[480px] lg:h-[600px] rounded-2xl bg-gradient-to-br from-background/20 to-background/5 backdrop-blur-sm border border-border/20" />
           
           {/* Floating elements */}
           <motion.div

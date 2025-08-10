@@ -10,9 +10,16 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
-      <ProcessSection />
-      <DesignSection />
-      <ImpactSection />
+      {/* Add scroll margin to account for fixed navbar */}
+      <div id="process" className="scroll-mt-20">
+        <ProcessSection />
+      </div>
+      <div id="design" className="scroll-mt-20">
+        <DesignSection />
+      </div>
+      <div id="impact" className="scroll-mt-20">
+        <ImpactSection />
+      </div>
       <Footer />
     </div>
   );

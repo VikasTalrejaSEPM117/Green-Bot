@@ -39,7 +39,7 @@ const impactStats: ImpactStat[] = [
 
 export const ImpactSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-primary/5">
+    <section className="py-16 md:py-20 bg-gradient-to-b from-background to-primary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -60,7 +60,7 @@ export const ImpactSection = () => {
         </motion.div>
 
         {/* Impact Stats Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16">
           {impactStats.map((stat, index) => (
             <motion.div
               key={stat.label}

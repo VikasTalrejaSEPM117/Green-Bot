@@ -66,7 +66,7 @@ export const ProcessSection = () => {
   const currentStep = processSteps.find(step => step.id === activeStep)!;
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-secondary/20">
+    <section className="py-16 md:py-20 bg-gradient-to-b from-background to-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -87,7 +87,7 @@ export const ProcessSection = () => {
         </motion.div>
 
         {/* Process Navigation */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-10 md:mb-12">
           {processSteps.map((step) => (
             <Button
               key={step.id}
@@ -124,7 +124,7 @@ export const ProcessSection = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="grid lg:grid-cols-2 gap-12 items-center"
+            className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center"
           >
             {/* Content */}
             <div className="space-y-8">
