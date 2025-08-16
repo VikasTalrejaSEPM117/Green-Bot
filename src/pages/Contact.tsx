@@ -45,7 +45,7 @@ const Contact = () => {
     
     if (validateForm()) {
     
-      fetch("http://localhost:3001/api/contact", {
+      fetch("https://greenbot-backend-gbwf.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",   // 👈 this tells Express to parse JSON
