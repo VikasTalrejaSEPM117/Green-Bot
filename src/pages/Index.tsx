@@ -20,7 +20,7 @@ const Index = () => {
       <div id="impact" className="scroll-mt-20">
         <ImpactSection />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

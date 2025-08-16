@@ -44,13 +44,13 @@ export const Navigation = () => {
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#process" className="text-foreground hover:text-accent transition-colors">
+            <a href="/#process" className="text-foreground hover:text-accent transition-colors">
               Process
             </a>
-            <a href="#design" className="text-foreground hover:text-accent transition-colors">
+            <a href="/#design" className="text-foreground hover:text-accent transition-colors">
               Design
             </a>
-            <a href="#impact" className="text-foreground hover:text-accent transition-colors">
+            <a href="/#impact" className="text-foreground hover:text-accent transition-colors">
               Impact
             </a>
             <a href="/contact" className="text-foreground hover:text-accent transition-colors">

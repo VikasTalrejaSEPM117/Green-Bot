@@ -9,10 +9,10 @@ function Environment() {
       <ambientLight intensity={0.6} />
       <directionalLight position={[10, 10, 5]} intensity={1} castShadow />
       <pointLight position={[-10, -10, -5]} intensity={0.5} color="#ff6600" />
-      <mesh position={[0, -2, 0]} receiveShadow>
+      {/* <mesh position={[0, -2, 0]} receiveShadow>
         <boxGeometry args={[10, 0.1, 10]} />
-        <meshStandardMaterial color="#8B4513" roughness={0.9} />
-      </mesh>
+        <meshStandardMaterial color="#eefad9" roughness={0.9} />
+      </mesh> */}
     </>
   );
 }
@@ -52,7 +52,7 @@ function GreenbotFBXModel() {
   });
 
   return (
-    <group ref={groupRef} position={[0, -1.2, 0]} scale={[0.01, 0.01, 0.01]}>
+    <group ref={groupRef} position={[0, -0.4, 0]} scale={[0.01, 0.01, 0.01]}>
       <primitive object={model} />
     </group>
   );
@@ -71,7 +71,7 @@ export const Greenbot3D = ({ className }: Greenbot3DProps) => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <Canvas
-        camera={{ position: [4, 3, 5], fov: 50 }}
+        camera={{ position: [2, -2, 7], fov: 30 }}
         dpr={[1, 2]}
         shadows
         style={{ background: "transparent" }}

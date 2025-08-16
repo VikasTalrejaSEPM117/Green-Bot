@@ -95,13 +95,13 @@ export const HeroSection = () => {
           transition={{ duration: 1, delay: 0.4 }}
           className="relative"
         >
-          <Greenbot3D className="h-[280px] sm:h-[360px] md:h-[480px] lg:h-[600px] rounded-2xl bg-gradient-to-br from-background/20 to-background/5 backdrop-blur-sm border border-border/20" />
+          <Greenbot3D className="h-[280px] sm:h-[360px] md:h-[480px] lg:h-[600px] mb-4 rounded-2xl" />
           
           {/* Floating elements */}
-          <motion.div
-            className="absolute top-4 right-4 bg-accent/20 backdrop-blur-sm rounded-full p-3"
+          {/* <motion.div
+            className="absolute top-4 right-4  backdrop-blur-sm rounded-full p-3"
             animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }  }
           >
             <div className="w-3 h-3 bg-accent rounded-full animate-glow-pulse" />
           </motion.div>
@@ -112,7 +112,7 @@ export const HeroSection = () => {
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
           >
             <div className="w-2 h-2 bg-earth rounded-full" />
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
       

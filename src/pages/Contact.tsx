@@ -44,11 +44,35 @@ const Contact = () => {
     e.preventDefault();
     
     if (validateForm()) {
-      // Simulate form submission
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
-      });
+    
+      fetch("http://localhost:3001/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",   // 👈 this tells Express to parse JSON
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            toast({
+              title: "Message sent successfully!",
+              description: "We'll get back to you as soon as possible.",
+            });
+          } else {
+            toast({
+              title: "Message failed!",
+              description: "Please try again later.",
+            });
+          }
+        });
+      
+      
       
       // Reset form
       setFormData({
@@ -130,10 +154,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium text-foreground">Email</h3>
                       <a 
-                        href="mailto:info@trovador.eu"
+                        href="mailto:greenbot@earthxway.org"
                         className="text-primary hover:text-primary/80 transition-colors"
                       >
-                        info@trovador.eu
+                        greenbot@earthxway.org
                       </a>
                     </div>
                   </div>
@@ -146,12 +170,12 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium text-foreground">LinkedIn</h3>
                       <a 
-                        href="https://linkedin.com/company/trovadorobot"
+                        href="https://linkedin.com/company/earthxway"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:text-primary/80 transition-colors"
                       >
-                        linkedin.com/company/trovadorobot
+                        linkedin.com/company/earthxway
                       </a>
                     </div>
                   </div>
@@ -242,7 +266,7 @@ const Contact = () => {
         </motion.div>
       </div>
       
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

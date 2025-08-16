@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import designImage from "@/assets/greenbot-design.jpg";
+import designImage from "/bot-design.jpg";
 
 interface DesignFeature {
   title: string;

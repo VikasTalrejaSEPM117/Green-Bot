@@ -28,7 +28,7 @@ const processSteps: ProcessStep[] = [
       "Terrain mapping for optimal planting patterns on steep slopes",
       "Predictive modeling for long-term forest sustainability"
     ],
-    image: planningImage,
+    image: "/Planning.jpg",
     color: "accent"
   },
   {
@@ -42,7 +42,7 @@ const processSteps: ProcessStep[] = [
       "Precision hole drilling and sapling placement",
       "Adaptive planting techniques for challenging burned terrain"
     ],
-    image: deploymentImage,
+    image: "/bot-3.jpg",
     color: "earth"
   },
   {

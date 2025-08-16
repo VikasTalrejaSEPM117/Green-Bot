@@ -156,11 +156,11 @@ export const ImpactSection = () => {
           <div className="mb-8 max-w-md mx-auto">
             <div className="flex justify-between text-sm mb-2">
               <span>Campaign Progress</span>
-              <span className="font-semibold">67% Complete</span>
+              <span className="font-semibold">0.03% Complete</span>
             </div>
-            <Progress value={67} className="h-3" />
+            <Progress value={0.3} className="h-3" />
             <div className="flex justify-between text-xs text-muted-foreground mt-2">
-              <span>$2.1M Raised</span>
+              <span>$0.3M Raised</span>
               <span>$3.2M Goal</span>
             </div>
           </div>
@@ -185,11 +185,11 @@ export const ImpactSection = () => {
           <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-accent rounded-full animate-glow-pulse" />
-              <span>5,847 Supporters</span>
+              <span>5 Supporters</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-earth rounded-full animate-glow-pulse" />
-              <span>23 Days Remaining</span>
+              <span>89 Days Remaining</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-primary-glow rounded-full animate-glow-pulse" />
