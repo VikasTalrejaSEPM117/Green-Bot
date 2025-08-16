@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,18 +45,18 @@ export const Navigation = () => {
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="/#process" className="text-foreground hover:text-accent transition-colors">
+            <Link to="/#process" className="text-foreground hover:text-accent transition-colors">
               Process
-            </a>
-            <a href="/#design" className="text-foreground hover:text-accent transition-colors">
+            </Link>
+            <Link to="/#design" className="text-foreground hover:text-accent transition-colors">
               Design
-            </a>
-            <a href="/#impact" className="text-foreground hover:text-accent transition-colors">
+            </Link>
+            <Link to="/#impact" className="text-foreground hover:text-accent transition-colors">
               Impact
-            </a>
-            <a href="/contact" className="text-foreground hover:text-accent transition-colors">
+            </Link>
+            <Link to="/contact" className="text-foreground hover:text-accent transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Desktop CTA */}
@@ -76,21 +77,21 @@ export const Navigation = () => {
               <SheetContent side="right" className="w-full sm:max-w-sm">
                 <nav className="mt-8 space-y-4">
                   <SheetClose asChild>
-                    <a href="#process" className="block text-lg text-foreground hover:text-accent transition-colors">Process</a>
+                    <Link to="/#process" className="block text-lg text-foreground hover:text-accent transition-colors">Process</Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <a href="#design" className="block text-lg text-foreground hover:text-accent transition-colors">Design</a>
+                    <Link to="/#design" className="block text-lg text-foreground hover:text-accent transition-colors">Design</Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <a href="#impact" className="block text-lg text-foreground hover:text-accent transition-colors">Impact</a>
+                    <Link to="/#impact" className="block text-lg text-foreground hover:text-accent transition-colors">Impact</Link>
                   </SheetClose>
                   <SheetClose asChild>
-                    <a href="/contact" className="block text-lg text-foreground hover:text-accent transition-colors">Contact</a>
+                    <Link to="/contact" className="block text-lg text-foreground hover:text-accent transition-colors">Contact</Link>
                   </SheetClose>
                 </nav>
                 <div className="mt-8">
                   <SheetClose asChild>
-                    <Button variant="hero" className="w-full rounded-full">Support Greenbot</Button>
+                    <Button variant="hero" className="w-full rounded-full" onClick={() => window.open("https://www.earthxway.org/support-greenbot", "_blank")}>Support Greenbot</Button>
                   </SheetClose>
                 </div>
               </SheetContent>
